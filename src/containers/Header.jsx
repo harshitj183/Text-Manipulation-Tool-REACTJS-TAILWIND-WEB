@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import About from '../pages/About';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 export default function Header(props) {
   return (
-    <>
+     <Router>
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           {/* Logo and title */}
@@ -24,7 +26,7 @@ export default function Header(props) {
           {/* Navigation links */}
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 hover:text-gray-900">Home</a>
-            <a className="mr-5 hover:text-gray-900">About</a>
+            <Link to='/about' className="mr-5 hover:text-gray-900">About</Link>
           </nav>
 
           {/* Toggle switch */}
@@ -40,7 +42,14 @@ export default function Header(props) {
           </label>
         </div>
       </header>
-    </>
+
+
+
+       <Routes>
+         
+         <Route path="/about" element={<About />} />
+       </Routes>
+      </Router>
   );
 }
 

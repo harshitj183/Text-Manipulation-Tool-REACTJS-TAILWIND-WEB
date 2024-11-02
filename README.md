@@ -1,4 +1,3 @@
-
 # Text Manipulation Tool
 
 [![React](https://img.shields.io/badge/React-v18.2.0-blue)](https://reactjs.org/)
@@ -139,4 +138,3 @@ Created by **[Harshit Jaiswal](https://github.com/harshitj183)**
 For any questions or suggestions, please feel free to contact me via [GitHub](https://github.com/harshitj183) or [email](mailto:harshitj183@gmail.com).
 
 ---
-
